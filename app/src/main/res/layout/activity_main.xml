@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danielwang.mystorage.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Android 五大存储"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SharedPreferences" />
+
+        <Button
+            android:id="@+id/bt_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件存储" />
+
+        <Button
+            android:id="@+id/bt_sql"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据库存储" />
+
+        <Button
+            android:id="@+id/bt_pri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ContentProvider存储" />
+
+        <Button
+            android:id="@+id/bt_inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网络存储" />
+
+    </LinearLayout>
+
+</RelativeLayout>

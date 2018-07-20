@@ -1,9 +1,14 @@
 package com.example.danielwang.mystorage;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.hitomi.cslibrary.CrazyShadow;
+import com.hitomi.cslibrary.base.CrazyShadowDirection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,5 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
     }
+
 }

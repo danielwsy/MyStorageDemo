@@ -1,55 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.danielwang.mystorage.MainActivity">
 
+    <EditText
+        android:id="@+id/sp_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp" />
+
     <TextView
+        android:id="@+id/sp_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/sp_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Android 五大存储"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:text="Save" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/sp_get"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Get" />
 
-        <Button
-            android:id="@+id/bt_sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SharedPreferences" />
 
-        <Button
-            android:id="@+id/bt_file"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="文件存储" />
-
-        <Button
-            android:id="@+id/bt_sql"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="数据库存储" />
-
-        <Button
-            android:id="@+id/bt_pri"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ContentProvider存储" />
-
-        <Button
-            android:id="@+id/bt_inter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="网络存储" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>
